@@ -1,13 +1,29 @@
 
-# TreeCity Explorer
+# MyTreeMap
 
-![TreeCity Explorer Logo](https://placehold.co/600x400/forest/white?text=TreeCity+Explorer)
+
 
 ## An interactive urban forestry platform for Indian cities
 
-TreeCity Explorer is an open-source platform that maps, monitors, and celebrates India's urban forests. The project aims to create awareness about the importance of trees in our cities and provide valuable data for urban forest management and conservation efforts.
+MyTreeMap Explorer is an open-source platform that maps, monitors, and celebrates India's urban forests. The project aims to create awareness about the importance of trees in our cities and provide valuable data for urban forest management and conservation efforts.
 
 **Live Demo:** [https://mytreemap.pages.dev](https://mytreemap.pages.dev)
+
+## Screenshots
+Here are some screenshots of the application:
+
+![Screenshot 1](./public/ss1.png)
+*Screenshot 1: Homepage with city view*
+
+![Screenshot 2](./public/ss2.png)
+*Screenshot 2: Detailed city analytics*
+
+![Screenshot 3](./public/ss3.png)
+*Screenshot 3: User interaction with map overlays*
+
+![Screenshot 4](./public/ss4.png)
+*Screenshot 4: Mobile responsive design*
+
 
 ## Features
 
@@ -50,7 +66,7 @@ The platform currently includes data for the following cities:
 
 ```bash
 git clone https://github.com/liveupx/MyTreeMap.git
-cd treecity-explorer
+cd MyTreeMap-explorer
 ```
 
 2. Install dependencies:
@@ -94,7 +110,7 @@ src/
 
 ## Embedding Widgets
 
-TreeCity Explorer provides free embeddable widgets that can be added to any website. To use a widget:
+MyTreeMap Explorer provides free embeddable widgets that can be added to any website. To use a widget:
 
 1. Visit [https://mytreemap.pages.dev/widgets](https://mytreemap.pages.dev/widgets)
 2. Choose a widget type (Tree Count, AQI, or Statistics)
@@ -109,7 +125,7 @@ Example embed code:
   width="300" 
   height="200" 
   frameborder="0"
-  title="TreeCity Explorer - Delhi tree count widget"
+  title="MyTreeMap Explorer - Delhi tree count widget"
 ></iframe>
 ```
 
@@ -127,7 +143,7 @@ For major changes, please open an issue first to discuss what you would like to 
 
 ## Data Sources & Methodology
 
-TreeCity Explorer uses data from various sources, including:
+MyTreeMap Explorer uses data from various sources, including:
 
 - Municipal corporation tree censuses
 - Satellite imagery analysis
