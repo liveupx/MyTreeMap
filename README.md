@@ -49,7 +49,7 @@ The platform currently includes data for the following cities:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/mohitchaprana/treecity-explorer.git
+git clone https://github.com/liveupx/MyTreeMap.git
 cd treecity-explorer
 ```
 
