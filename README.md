@@ -7,7 +7,7 @@
 
 MyTreeMap Explorer is an open-source platform that maps, monitors, and celebrates India's urban forests. The project aims to create awareness about the importance of trees in our cities and provide valuable data for urban forest management and conservation efforts.
 
-**Live Demo:** [https://mytreemap.pages.dev](https://mytreemap.pages.dev)
+**Live Demo:** [https://mytreemap.netlify.app](https//mytreemap.netlify.app)
 
 ## Screenshots
 Here are some screenshots of the application:
@@ -121,7 +121,7 @@ Example embed code:
 
 ```html
 <iframe 
-  src="https://mytreemap.pages.dev/embed?city=Delhi&type=treeCount&theme=light" 
+  src="https://mytreemap.netlify.app/embed?city=Delhi&type=treeCount&theme=light" 
   width="300" 
   height="200" 
   frameborder="0"
@@ -150,7 +150,7 @@ MyTreeMap Explorer uses data from various sources, including:
 - Community reporting
 - Scientific research studies
 
-For more information about our data methodology, visit [https://mytreemap.pages.dev/methodology](https://mytreemap.pages.dev/methodology)
+For more information about our data methodology, visit [https://mytreemap.netlify.app/methodology](https://mytreemap.netlify.app/methodology)
 
 ## Contact & Support
 
