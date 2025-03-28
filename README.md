@@ -112,7 +112,7 @@ src/
 
 MyTreeMap Explorer provides free embeddable widgets that can be added to any website. To use a widget:
 
-1. Visit [https://mytreemap.pages.dev/widgets](https://mytreemap.pages.dev/widgets)
+1. Visit [https://mytreemap.netlify.app/widgets](https://mytreemap.netlify.app/widgets)
 2. Choose a widget type (Tree Count, AQI, or Statistics)
 3. Customize the widget
 4. Copy the embed code and paste it into your website
