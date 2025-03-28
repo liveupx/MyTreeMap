@@ -21,7 +21,7 @@ const Index = () => {
           <div className="flex items-center mb-3 md:mb-0">
             <Trees className="h-7 w-7 mr-2 animate-leaf-sway" />
             <div>
-              <h1 className="text-xl md:text-2xl font-bold font-heading">TreeCity Explorer</h1>
+              <h1 className="text-xl md:text-2xl font-bold font-heading">MyTreeMap</h1>
               <p className="text-xs md:text-sm text-forest-light">Explore Urban Forests Across India</p>
             </div>
           </div>
@@ -138,7 +138,7 @@ const Index = () => {
             <div>
               <div className="flex items-center mb-4">
                 <Trees className="h-5 w-5 md:h-6 md:w-6 mr-2 text-forest-light" />
-                <h3 className="text-lg md:text-xl font-bold">TreeCity Explorer</h3>
+                <h3 className="text-lg md:text-xl font-bold">MyTreeMap</h3>
               </div>
               <p className="text-xs md:text-sm text-gray-400">
                 Mapping and monitoring urban forests across Indian cities to create healthier, greener urban environments.
@@ -202,7 +202,7 @@ const Index = () => {
           
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-xs md:text-sm text-gray-400">
-              © 2024 TreeCity Explorer by Mohit Chaprana, Founder of Liveupx.com. All rights reserved.
+              © 2024 MyTreeMap by Mohit Chaprana, Founder of Liveupx.com. All rights reserved.
             </p>
             <div className="mt-3 md:mt-0">
               <a href="https://liveupx.com" target="_blank" rel="noopener noreferrer" className="text-forest-light hover:text-white transition-colors inline-flex items-center text-sm">
