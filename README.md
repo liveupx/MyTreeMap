@@ -2,8 +2,6 @@
 
 # 🌳 MyTreeMap
 
-![MyTreeMap Logo](https://images.unsplash.com/photo-1500673922987-e212871fec22?w=600&h=400&fit=crop&crop=entropy&auto=format)
-
 ## An interactive urban forestry platform for Indian cities
 
 MyTreeMap is an open-source platform that maps, monitors, and celebrates India's urban forests. The project aims to create awareness about the importance of trees in our cities and provide valuable data for urban forest management and conservation efforts.
@@ -60,6 +58,10 @@ MyTreeMap serves as an educational and environmental platform focused on raising
 <div align="center" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 30px 0;">
 
 ![Screenshot 1](./public/ss1.png)
+![Screenshot 5](./public/ssa.png)
+![Screenshot 6](./public/ssb.png)
+![Screenshot 7](./public/ssc.png)
+![Screenshot 9](./public/sse.png)
 ![Screenshot 2](./public/ss2.png)
 ![Screenshot 3](./public/ss3.png)
 ![Screenshot 4](./public/ss4.png)
