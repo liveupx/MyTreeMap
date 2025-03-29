@@ -1,7 +1,8 @@
+![MyTreeMap Demo](public/test.gif)
 
 # 🌳 MyTreeMap
 
-![MyTreeMap Demo](public/test.gif)
+![MyTreeMap Logo](https://images.unsplash.com/photo-1500673922987-e212871fec22?w=600&h=400&fit=crop&crop=entropy&auto=format)
 
 ## An interactive urban forestry platform for Indian cities
 
@@ -12,7 +13,15 @@ MyTreeMap is an open-source platform that maps, monitors, and celebrates India's
 [![GitHub stars](https://img.shields.io/github/stars/liveupx/MyTreeMap?style=social)](https://github.com/liveupx/MyTreeMap)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://preview--treecity-explorer.lovable.app/)
+[![Demo Video](https://img.shields.io/badge/demo-video-red.svg)](https://youtu.be/G8DLxRhaxAQ)
 </div>
+
+## 📋 Quick Links
+
+- [Demo Video](https://youtu.be/G8DLxRhaxAQ)
+- [Live Demo](https://preview--treecity-explorer.lovable.app/)
+- [LinkedIn Post](https://www.linkedin.com/feed/update/urn:li:activity:7311697145152032769)
+- [Reddit Post](https://www.reddit.com/r/SideProject/comments/1jmjciu/mapmytrees_mapping_and_monitoring_urban_forests/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
 
 ## 🏆 Hackathon Submission - Website Track
 
@@ -50,7 +59,6 @@ MyTreeMap serves as an educational and environmental platform focused on raising
 
 <div align="center" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 30px 0;">
 
-![Screenshot 8](./public/ssd.png)
 ![Screenshot 1](./public/ss1.png)
 ![Screenshot 2](./public/ss2.png)
 ![Screenshot 3](./public/ss3.png)
@@ -60,10 +68,6 @@ MyTreeMap serves as an educational and environmental platform focused on raising
 ![Screenshot 7](./public/ss7.png)
 ![Screenshot 8](./public/ss8.png)
 ![Screenshot 9](./public/ss9.png)
-![Screenshot 5](./public/ssa.png)
-![Screenshot 6](./public/ssb.png)
-![Screenshot 7](./public/ssc.png)
-![Screenshot 9](./public/sse.png)
 ![Screenshot 10](./public/ss10.png)
 ![Screenshot 11](./public/ss11.png)
 ![Screenshot 12](./public/ss12.png)
@@ -242,6 +246,110 @@ MyTreeMap uses data from various sources, including:
 - 🔬 Scientific research studies
 
 For more information about our data methodology, visit [https://preview--treecity-explorer.lovable.app/methodology](https://preview--treecity-explorer.lovable.app/methodology)
+
+## 🔧 Technical Implementation
+
+The MyTreeMap application integrates several advanced technologies:
+
+### Claude AI Integration
+The TreeIdentifier component demonstrates Claude integration by:
+- Simulating an AI-powered tree species identification feature
+- Processing uploaded images and returning structured tree data
+- Providing confidence scores and environmental benefits information
+
+### Supabase Integration
+The project uses Supabase for data storage and user contributions:
+- The `supabase-client.ts` file initializes the Supabase client with demo credentials
+- Community contributions are stored and retrieved from Supabase tables
+- File storage is simulated for tree images
+- Fallback to mock data when in demo mode ensures the UI remains functional
+
+### Sentry Integration
+Error tracking and monitoring with Sentry:
+- Initialized in `main.tsx` with proper DSN configuration
+- React Router instrumentation configured in `App.tsx` for route-based error tracking
+- Error boundaries wrap the application to provide graceful failure handling
+- Custom error capture for API failures with proper context
+
+### ElevenLabs Integration
+Audio narration capabilities:
+- The AudioGuide component uses ElevenLabs for text-to-speech narration
+- Uses ElevenLabs voices for natural-sounding city tour guides
+- Provides fallback audio content for demo mode
+
+### Lovable Implementation
+The entire application is built using Lovable:
+- React and TypeScript for robust frontend development
+- Tailwind CSS for responsive design
+- shadcn/ui components for consistent UI patterns
+- Modular component architecture for maintainability
+- Responsive design principles throughout the application
+
+This architecture ensures the application demonstrates all required integrations while maintaining a clean, maintainable codebase that gracefully handles both online and offline/demo scenarios.
+
+## 🧩 Interactive Elements
+
+The MyTreeMap platform offers several key interactive features that engage visitors:
+
+### Interactive Map:
+- The MapBox component allows users to explore urban tree coverage across major Indian cities
+- Users can zoom in/out and pan across the map
+- Tree locations are plotted with interactive markers
+
+### City Selector:
+- Dropdown menu enabling users to switch between different Indian cities
+- Each selection updates the map view, statistics, and environmental impact data
+
+### AI Tree Identifier:
+- Claude-powered feature allowing users to upload tree photos
+- Image processing provides species identification with confidence scores
+- Displays detailed information about identified tree species and benefits
+
+### Audio Guide Tours:
+- ElevenLabs-powered narration about urban forests in each city
+- Play/pause functionality with visual playback indicators
+- Audio controls for volume adjustment
+
+### Community Contributions:
+- Supabase-powered feature where users can view and share tree planting stories
+- Image upload capability for community contribution photos
+- Like and comment functionality on community posts
+
+### Environmental Impact Dashboard:
+- Interactive data visualizations showing environmental metrics
+- Toggles between different environmental impact categories
+- Responsive charts that adapt to different screen sizes
+
+## 🚶 Visitor Actions
+
+The platform encourages several key user actions:
+
+### 1. Exploration:
+- Visitors can explore tree distribution across different cities
+- View detailed statistics about urban forests in each location
+- Access research data and methodology information
+
+### 2. Identification:
+- Upload photos to identify tree species using AI technology
+- Learn about specific tree benefits and characteristics
+- Discover native and non-native species in their area
+
+### 3. Contribution:
+- Share personal tree planting experiences and photos
+- Engage with content from other community members
+- Participate in tree planting initiatives
+
+### 4. Learning:
+- Listen to audio narrations about urban forests
+- Access research papers and government initiatives
+- Understand environmental impacts of urban trees
+
+### 5. Sharing:
+- Embed interactive tree data widgets on external websites
+- Share city statistics and environmental impact data
+- Integrate tree count displays on personal or organization sites
+
+The platform is designed to be educational, engaging, and action-oriented, encouraging visitors to not only learn about urban forests but also participate in their preservation and expansion.
 
 ## 📞 Contact & Support
 
