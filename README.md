@@ -1,13 +1,22 @@
+# 🌳 MyTreeMap
 
-# MyTreeMap
+![MyTreeMap Logo](https://images.unsplash.com/photo-1500673922987-e212871fec22?w=600&h=400&fit=crop&crop=entropy&auto=format)
 
 ## An interactive urban forestry platform for Indian cities
 
-MyTreeMap Explorer is an open-source platform that maps, monitors, and celebrates India's urban forests. The project aims to create awareness about the importance of trees in our cities and provide valuable data for urban forest management and conservation efforts.
+MyTreeMap is an open-source platform that maps, monitors, and celebrates India's urban forests. The project aims to create awareness about the importance of trees in our cities and provide valuable data for urban forest management and conservation efforts.
 
-**Live Demo:** [https://mytreemap.netlify.app](https//mytreemap.netlify.app)
+**Live Demo:** [https://mytreemap.netlify.app](https://mytreemap.netlify.app)
 
-## Screenshots
+<div align="center">
+
+[![GitHub stars](https://img.shields.io/github/stars/liveupx/MyTreeMap?style=social)](https://github.com/liveupx/MyTreeMap)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/12345678-1234-1234-1234-123456789abc/deploy-status)](https://app.netlify.com/sites/mytreemap/deploys)
+
+</div>
+
+## 📸 Screenshots
 
 <div align="center" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 30px 0;">
 
@@ -27,19 +36,19 @@ MyTreeMap Explorer is an open-source platform that maps, monitors, and celebrate
 ![Screenshot 14](./public/ss14.png)
 ![Screenshot 15](./public/ss15.png)
 ![Screenshot 16](./public/ss16.png)
-![Screenshot 16](./public/ss17.png)
+![Screenshot 17](./public/ss17.png)
 
 </div>
 
-## Environmental Impact Data (2024)
+## 📊 Environmental Impact Data (2024)
 
-| City       | Trees | CO₂ Sequestration | AQI Improvement |
+| City       | 🌳 Trees | 🌿 CO₂ Sequestration | 💨 AQI Improvement |
 |------------|-------|-------------------|-----------------|
 | Delhi      | 2.38M | 18,000 tons/yr    | 15-20 points    |
 | Mumbai     | 1.2M  | 12,500 tons/yr    | 10-15 points    |
 | Bangalore  | 1.8M  | 8,000 tons/yr     | 8-12 points     |
 
-## Government Initiatives
+## 🏛️ Government Initiatives
 
 ### National Programs
 - **Green India Mission**: ₹944 Cr allocated
@@ -51,49 +60,57 @@ MyTreeMap Explorer is an open-source platform that maps, monitors, and celebrate
 - **Maharashtra**: Mangrove Cell
 - **Karnataka**: Urban Forestry Project
 
+## ✨ Features
 
-## Features
-
-- 🌳 **Interactive Tree Map**: Explore tree locations across major Indian cities
-- 📊 **City Statistics**: View detailed tree statistics for each city
+- 🗺️ **Interactive Tree Map**: Explore tree locations across major Indian cities
+- 📈 **City Statistics**: View detailed tree statistics for each city
 - 🌤️ **Air Quality Data**: Real-time AQI data and its correlation with tree cover
 - 📱 **Embeddable Widgets**: Free widgets to share tree data on your website
-- 📈 **Environmental Impact**: Visualize the benefits of urban trees on air quality and climate
-- 📝 **Research Integration**: Access to research papers and methodologies
+- 🌿 **Environmental Impact**: Visualize the benefits of urban trees on air quality and climate
+- 📚 **Research Integration**: Access to research papers and methodologies
 
-## City Coverage
+## 🏙️ City Coverage
 
 The platform currently includes data for the following cities:
 
-- Delhi
-- Mumbai
-- Bangalore
-- Chennai
-- Kolkata
-- Hyderabad
-- Ahmedabad
-- Pune
+<div style="columns: 2;">
+
+- 🏙️ Delhi
+- 🏙️ Mumbai
+- 🏙️ Bangalore
+- 🏙️ Chennai
+- 🏙️ Kolkata
+- 🏙️ Hyderabad
+- 🏙️ Ahmedabad
+- 🏙️ Pune
+
+</div>
 
 *More cities are being added regularly*
 
-## Technologies Used
+## 🛠️ Technologies Used
 
-- React
-- TypeScript
-- Tailwind CSS
-- shadcn/ui
-- MapBox GL JS
-- Recharts
-- Lucide Icons
-- TanStack Query
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
 
-## Running Locally
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![MapBox](https://img.shields.io/badge/Mapbox-000000?style=for-the-badge&logo=mapbox&logoColor=white)
+
+</div>
+
+- 🎨 shadcn/ui components
+- 📊 Recharts for data visualization
+- 🔍 Lucide Icons for beautiful iconography
+- 🔄 TanStack Query for efficient data fetching
+
+## 🚀 Running Locally
 
 1. Clone the repository:
 
 ```bash
 git clone https://github.com/liveupx/MyTreeMap.git
-cd MyTreeMap-explorer
+cd MyTreeMap
 ```
 
 2. Install dependencies:
@@ -116,7 +133,7 @@ npm run dev
 
 5. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 src/
@@ -135,9 +152,9 @@ src/
 └── main.tsx              # Application entry point
 ```
 
-## Embedding Widgets
+## 🔌 Embedding Widgets
 
-MyTreeMap Explorer provides free embeddable widgets that can be added to any website. To use a widget:
+MyTreeMap provides free embeddable widgets that can be added to any website:
 
 1. Visit [https://mytreemap.netlify.app/widgets](https://mytreemap.netlify.app/widgets)
 2. Choose a widget type (Tree Count, AQI, or Statistics)
@@ -152,13 +169,15 @@ Example embed code:
   width="300" 
   height="200" 
   frameborder="0"
-  title="MyTreeMap Explorer - Delhi tree count widget"
+  title="MyTreeMap - Delhi tree count widget"
 ></iframe>
 ```
 
-## Contributing
+## 👥 Contributing
 
-We welcome contributions from developers, data scientists, urban planners, and tree enthusiasts! Here's how you can contribute:
+We welcome contributions from developers, data scientists, urban planners, and tree enthusiasts!
+
+### How to contribute:
 
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature/amazing-feature`
@@ -168,30 +187,45 @@ We welcome contributions from developers, data scientists, urban planners, and t
 
 For major changes, please open an issue first to discuss what you would like to change.
 
-## Data Sources & Methodology
+## 📊 Data Sources & Methodology
 
-MyTreeMap Explorer uses data from various sources, including:
+MyTreeMap uses data from various sources, including:
 
-- Municipal corporation tree censuses
-- Satellite imagery analysis
-- Community reporting
-- Scientific research studies
+- 🏙️ Municipal corporation tree censuses
+- 🛰️ Satellite imagery analysis
+- 👥 Community reporting
+- 🔬 Scientific research studies
 
 For more information about our data methodology, visit [https://mytreemap.netlify.app/methodology](https://mytreemap.netlify.app/methodology)
 
-## Contact & Support
+## 📞 Contact & Support
 
-- **Email**: mohit@liveupx.com (For support/help/donations)
-- **General Inquiries**: ceo@liveupx.com
-- **More Widgets**: [https://widgetx.site](https://widgetx.site)
+- ✉️ **Email**: mohit@liveupx.com (For support/help/donations)
+- 💼 **General Inquiries**: ceo@liveupx.com
+- 🔌 **More Widgets**: [https://widgetx.site](https://widgetx.site)
 
-## License
+## 🤝 Partners
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin-top: 10px;">
+
+[![Liveupx.com](https://img.shields.io/badge/Liveupx.com-Technology_Partner-blue)](https://liveupx.com)
+[![MentorJi.live](https://img.shields.io/badge/MentorJi.live-Education_Partner-green)](https://mentorji.live)
+[![Widgetx.Site](https://img.shields.io/badge/Widgetx.Site-Integration_Partner-purple)](https://widgetx.site)
+[![SayEarth.Org](https://img.shields.io/badge/SayEarth.Org-Environmental_NGO-brightgreen)](https://sayearth.org)
+[![CaringAdoptions.org](https://img.shields.io/badge/CaringAdoptions.org-Social_Impact_Partner-orange)](https://caringadoptions.org)
+[![Pitch-Deck.Agency](https://img.shields.io/badge/Pitch--Deck.Agency-Communication_Partner-yellow)](https://pitch-deck.agency)
+[![Gurjar.App](https://img.shields.io/badge/Gurjar.App-Community_Partner-red)](https://gurjar.app)
+[![AlfaCare](https://img.shields.io/badge/AlfaCare-Healthcare_Partner-lightblue)](https://alfacare.org)
+
+</div>
+
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
+## 🙏 Acknowledgments
 
-- Developed by Mohit Chaprana, Founder of [Liveupx.com](https://liveupx.com)
-- Inspired by NYC's Tree Map project
-- Thanks to all our [partner organizations](https://mytreemap.pages.dev/partners)
-- Special thanks to all contributors and tree enthusiasts
+- 👨‍💻 Developed by Mohit Chaprana, Founder of [Liveupx.com](https://liveupx.com)
+- 🌆 Inspired by NYC's Tree Map project
+- 🤝 Thanks to all our [partner organizations](https://mytreemap.netlify.app/partners)
+- ✨ Special thanks to all contributors and tree enthusiasts
