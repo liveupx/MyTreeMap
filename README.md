@@ -1,8 +1,6 @@
 
 # MyTreeMap
 
-
-
 ## An interactive urban forestry platform for Indian cities
 
 MyTreeMap Explorer is an open-source platform that maps, monitors, and celebrates India's urban forests. The project aims to create awareness about the importance of trees in our cities and provide valuable data for urban forest management and conservation efforts.
@@ -29,8 +27,29 @@ MyTreeMap Explorer is an open-source platform that maps, monitors, and celebrate
 ![Screenshot 14](./public/ss14.png)
 ![Screenshot 15](./public/ss15.png)
 ![Screenshot 16](./public/ss16.png)
+![Screenshot 16](./public/ss17.png)
 
 </div>
+
+## Environmental Impact Data (2024)
+
+| City       | Trees | CO₂ Sequestration | AQI Improvement |
+|------------|-------|-------------------|-----------------|
+| Delhi      | 2.38M | 18,000 tons/yr    | 15-20 points    |
+| Mumbai     | 1.2M  | 12,500 tons/yr    | 10-15 points    |
+| Bangalore  | 1.8M  | 8,000 tons/yr     | 8-12 points     |
+
+## Government Initiatives
+
+### National Programs
+- **Green India Mission**: ₹944 Cr allocated
+- **Nagar Van Yojana**: 546 urban forests approved
+- **Ek Ped Maa Ke Naam**: 135 crore trees target
+
+### State Highlights
+- **Delhi**: Tree Transplantation Policy
+- **Maharashtra**: Mangrove Cell
+- **Karnataka**: Urban Forestry Project
 
 
 ## Features
