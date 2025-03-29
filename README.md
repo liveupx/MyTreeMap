@@ -78,7 +78,7 @@ npm install
 3. Create a `.env` file in the root directory with:
 
 ```
-VITE_MAPBOX_TOKEN=pk.eyJ1IjoibGl2ZXVweCIsImEiOiJjbThzbnU1aHowMXdiMmtzNnZrbnJ2bG93In0.dq6Z_8Cf7pj19tDqCWp9hQ
+VITE_MAPBOX_TOKEN=pk.YOUR_OWN_TOKEN_KEY
 ```
 
 4. Start the development server:
