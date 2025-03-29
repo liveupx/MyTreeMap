@@ -15,7 +15,7 @@ MyTreeMap Explorer is an open-source platform that maps, monitors, and celebrate
 ![Screenshot 2](./public/ss2.png)
 ![Screenshot 3](./public/ss3.png)
 ![Screenshot 4](./public/ss4.png)
-![Screenshot 5](./public/ss5.png)
+![Screenshot 5](./public/ss.png)
 ![Screenshot 6](./public/ss6.png)
 ![Screenshot 7](./public/ss7.png)
 ![Screenshot 8](./public/ss8.png)
