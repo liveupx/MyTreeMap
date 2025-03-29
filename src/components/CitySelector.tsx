@@ -4,8 +4,9 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { MapPin } from "lucide-react";
 
 interface CitySelectorProps {
-  selectedCity: string;
+  selectedCity?: string;
   onChange: (city: string) => void;
+  onCityChange?: (city: string) => void; // For backward compatibility
 }
 
 const cities = [
@@ -19,13 +20,18 @@ const cities = [
   { name: "Ahmedabad", state: "Gujarat", population: "5.57M", treeCount: "1.12M" },
 ];
 
-const CitySelector: React.FC<CitySelectorProps> = ({ selectedCity, onChange }) => {
+const CitySelector: React.FC<CitySelectorProps> = ({ selectedCity = "Delhi", onChange, onCityChange }) => {
+  const handleChange = (value: string) => {
+    onChange(value);
+    if (onCityChange) onCityChange(value);
+  };
+
   return (
     <div className="flex items-center space-x-2">
       <MapPin className="h-5 w-5 text-forest" />
       <Select
         value={selectedCity}
-        onValueChange={onChange}
+        onValueChange={handleChange}
       >
         <SelectTrigger className="w-[200px] border-forest/20 focus:ring-forest/30">
           <SelectValue placeholder="Select a city" />

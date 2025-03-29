@@ -3,12 +3,31 @@ import React, { useEffect, useRef } from 'react';
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
-const MapBox = () => {
+interface MapBoxProps {
+  city?: string;
+}
+
+const MapBox: React.FC<MapBoxProps> = ({ city = "Delhi" }) => {
   const mapContainer = useRef<HTMLDivElement>(null);
   const map = useRef<mapboxgl.Map | null>(null);
 
   useEffect(() => {
     if (!mapContainer.current) return;
+
+    // City coordinates
+    const cityCoordinates: Record<string, [number, number]> = {
+      "Delhi": [77.2090, 28.6139],
+      "Mumbai": [72.8777, 19.0760],
+      "Bangalore": [77.5946, 12.9716],
+      "Chennai": [80.2707, 13.0827],
+      "Kolkata": [88.3639, 22.5726],
+      "Hyderabad": [78.4867, 17.3850],
+      "Ahmedabad": [72.5714, 23.0225],
+      "New Delhi": [77.2090, 28.6139]
+    };
+
+    // Get coordinates for selected city or default to Delhi
+    const coordinates = cityCoordinates[city] || cityCoordinates["Delhi"];
 
     // Initialize map with the provided API key
     mapboxgl.accessToken = 'pk.eyJ1IjoibGl2ZXVweCIsImEiOiJjbThzbnU1aHowMXdiMmtzNnZrbnJ2bG93In0.dq6Z_8Cf7pj19tDqCWp9hQ';
@@ -16,7 +35,7 @@ const MapBox = () => {
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
       style: 'mapbox://styles/mapbox/satellite-streets-v12', // Changed to show more greenery
-      center: [77.2090, 28.6139], // Delhi coordinates
+      center: coordinates, // Now coordinates are properly typed as [number, number]
       zoom: 11,
       pitch: 45,
     });
@@ -33,20 +52,11 @@ const MapBox = () => {
     map.current.on('load', () => {
       if (!map.current) return;
       
-      // Add tree markers for visualization
-      const treeLocations = [
-        { lng: 77.2090, lat: 28.6139 },
-        { lng: 77.2150, lat: 28.6180 },
-        { lng: 77.2030, lat: 28.6100 },
-        { lng: 77.2200, lat: 28.6050 },
-        { lng: 77.1950, lat: 28.6200 },
-        { lng: 77.2100, lat: 28.6250 },
-        { lng: 77.2250, lat: 28.6150 },
-        { lng: 77.2000, lat: 28.6000 },
-        { lng: 77.2300, lat: 28.6220 },
-        { lng: 77.1900, lat: 28.6050 },
-        { lng: 77.2170, lat: 28.6120 },
-      ];
+      // Generate 10-15 random points around the city center for tree locations
+      const treeLocations = Array.from({ length: 11 }, (_, i) => ({
+        lng: coordinates[0] + (Math.random() - 0.5) * 0.05,
+        lat: coordinates[1] + (Math.random() - 0.5) * 0.05
+      }));
       
       // Add a source of tree data
       map.current.addSource('trees', {
@@ -98,7 +108,7 @@ const MapBox = () => {
     return () => {
       map.current?.remove();
     };
-  }, []);
+  }, [city]); // Add city as a dependency to update when it changes
 
   return (
     <div className="map-container relative w-full h-[400px] mb-4">

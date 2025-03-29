@@ -1,6 +1,7 @@
+
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { ExternalLink, Mail, Trees, PhoneCall, MapPin, SendHorizonal } from "lucide-react";
+import { ExternalLink, Mail, Trees, PhoneCall, MapPin, SendHorizonal, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -8,6 +9,7 @@ import { Separator } from "@/components/ui/separator";
 import { useToast } from "@/hooks/use-toast";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { submitContactForm } from "@/lib/supabase-client";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -27,24 +29,35 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      // Submit form data to Supabase
+      await submitContactForm(formData);
+      
       toast({
         title: "Message sent!",
         description: "Thank you for contacting us. We'll get back to you soon.",
       });
+      
       setFormData({
         name: "",
         email: "",
         subject: "",
         message: ""
       });
+    } catch (error) {
+      console.error("Form submission error:", error);
+      toast({
+        title: "Error sending message",
+        description: "There was a problem sending your message. Please try again later.",
+        variant: "destructive",
+      });
+    } finally {
       setIsSubmitting(false);
-    }, 1500);
+    }
   };
 
   return (
@@ -210,7 +223,10 @@ const Contact = () => {
                     disabled={isSubmitting}
                   >
                     {isSubmitting ? (
-                      <>Sending message...</>
+                      <>
+                        <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                        Sending message...
+                      </>
                     ) : (
                       <>
                         <SendHorizonal className="mr-2 h-4 w-4" />
