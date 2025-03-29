@@ -1,7 +1,7 @@
 
 # 🌳 MyTreeMap
 
-![MyTreeMap Logo](https://images.unsplash.com/photo-1500673922987-e212871fec22?w=600&h=400&fit=crop&crop=entropy&auto=format)
+![MyTreeMap Logo](./public/Mapmytrees.png)
 
 ## An interactive urban forestry platform for Indian cities
 
@@ -59,6 +59,11 @@ MyTreeMap serves as an educational and environmental platform focused on raising
 ![Screenshot 7](./public/ss7.png)
 ![Screenshot 8](./public/ss8.png)
 ![Screenshot 9](./public/ss9.png)
+![Screenshot 5](./public/ssa.png)
+![Screenshot 6](./public/ssb.png)
+![Screenshot 7](./public/ssc.png)
+![Screenshot 8](./public/ssd.png)
+![Screenshot 9](./public/sse.png)
 ![Screenshot 10](./public/ss10.png)
 ![Screenshot 11](./public/ss11.png)
 ![Screenshot 12](./public/ss12.png)
