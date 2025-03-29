@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Trees, ExternalLink, Info, MapPin } from "lucide-react";
@@ -6,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 const cityData = [
   {
@@ -87,23 +88,7 @@ const Cities = () => {
   
   return (
     <div className="min-h-screen bg-gradient-to-b from-soil to-white">
-      <header className="bg-forest text-white shadow-md">
-        <div className="container mx-auto px-4 py-3 flex flex-col md:flex-row justify-between items-center">
-          <div className="flex items-center mb-3 md:mb-0">
-            <Trees className="h-7 w-7 mr-2 animate-leaf-sway" />
-            <div>
-              <h1 className="text-xl md:text-2xl font-bold font-heading">TreeCity Explorer</h1>
-              <p className="text-xs md:text-sm text-forest-light">Explore Urban Forests Across India</p>
-            </div>
-          </div>
-          
-          <div className="flex items-center gap-2">
-            <Button variant="outline" className="bg-white/10 border-white/20 hover:bg-white/20" size="sm" asChild>
-              <Link to="/">Back to Home</Link>
-            </Button>
-          </div>
-        </div>
-      </header>
+      <Navigation />
       
       <main className="container mx-auto px-4 py-8 md:py-12">
         <div className="max-w-6xl mx-auto">
@@ -255,21 +240,7 @@ const Cities = () => {
         </div>
       </main>
       
-      <footer className="bg-gray-900 text-white py-8 mt-12">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-xs md:text-sm text-gray-400">
-              © 2024 TreeCity Explorer by Mohit Chaprana, Founder of Liveupx.com. All rights reserved.
-            </p>
-            <div className="mt-3 md:mt-0">
-              <a href="https://liveupx.com" target="_blank" rel="noopener noreferrer" className="text-forest-light hover:text-white transition-colors inline-flex items-center text-sm">
-                <span>Visit Liveupx.com</span>
-                <ExternalLink className="h-3 w-3 md:h-4 md:w-4 ml-1" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

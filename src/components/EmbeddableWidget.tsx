@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -29,7 +28,7 @@ const WidgetPreview = ({ type, city, theme, customOptions }: {
       >
         <div className="flex items-center justify-between">
           <div className={`text-sm font-medium ${theme === "light" ? "text-gray-500" : "text-gray-300"}`}>
-            {customOptions.title || "TreeCity Explorer"}
+            {customOptions.title || "MyTreeMaps Explorer"}
           </div>
           <Trees size={18} className="text-forest" />
         </div>
@@ -141,11 +140,11 @@ const EmbeddableWidget = ({ city }: { city: string }) => {
 
   const getEmbedCode = () => {
     return `<iframe 
-  src="https://treecity-explorer.com/embed?city=${city}&type=${widgetType}&theme=${widgetTheme}${customOptions.title ? `&title=${encodeURIComponent(customOptions.title)}` : ''}${customOptions.description ? `&description=${encodeURIComponent(customOptions.description)}` : ''}" 
+  src="https://mytreemap.netlify.app/embed?city=${city}&type=${widgetType}&theme=${widgetTheme}${customOptions.title ? `&title=${encodeURIComponent(customOptions.title)}` : ''}${customOptions.description ? `&description=${encodeURIComponent(customOptions.description)}` : ''}" 
   width="${customOptions.width}" 
   height="${customOptions.height}" 
   frameborder="0"
-  title="TreeCity Explorer - ${city} ${widgetType} widget"
+  title="MyTreeMaps - ${city} ${widgetType} widget"
 ></iframe>`;
   };
 
@@ -333,7 +332,7 @@ const EmbeddableWidget = ({ city }: { city: string }) => {
           </div>
         </div>
         <div className="flex flex-col sm:flex-row justify-between w-full gap-2">
-          <Button variant="outline" onClick={() => window.open("https://treecity-explorer.com/widgets", "_blank")}>
+          <Button variant="outline" onClick={() => window.open("https://mytreemap.netlify.app/widgets", "_blank")}>
             <ExternalLink className="mr-2 h-4 w-4" />
             More Widget Options
           </Button>

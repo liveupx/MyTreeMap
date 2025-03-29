@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Trees, ExternalLink, BarChart, Leaf, Copy, Code, Info } from "lucide-react";
@@ -7,6 +6,8 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Separator } from "@/components/ui/separator";
 import { useToast } from "@/hooks/use-toast";
+import Footer from "@/components/Footer";
+import Navigation from "@/components/Navigation";
 
 const WidgetPreview = ({ type, city, theme }: { type: string; city: string; theme: string }) => {
   // Different widget types
@@ -18,7 +19,7 @@ const WidgetPreview = ({ type, city, theme }: { type: string; city: string; them
       >
         <div className="flex items-center justify-between">
           <div className={`text-sm font-medium ${theme === "light" ? "text-gray-500" : "text-gray-300"}`}>
-            TreeCity Explorer
+            MyTreeMaps Explorer
           </div>
           <Trees size={18} className="text-forest" />
         </div>
@@ -122,11 +123,11 @@ const Widgets = () => {
 
   const copyEmbedCode = (type: string) => {
     const embedCode = `<iframe 
-  src="https://mytreemap.pages.dev/embed?city=${selectedCity}&type=${type}&theme=${widgetTheme}" 
+  src="https://mytreemap.netlify.app/embed?city=${selectedCity}&type=${type}&theme=${widgetTheme}" 
   width="300" 
   height="200" 
   frameborder="0"
-  title="TreeCity Explorer - ${selectedCity} ${type} widget"
+  title="MyTreeMaps - ${selectedCity} ${type} widget"
 ></iframe>`;
 
     navigator.clipboard.writeText(embedCode);
@@ -137,23 +138,7 @@ const Widgets = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-soil to-white">
-      <header className="bg-forest text-white shadow-md">
-        <div className="container mx-auto px-4 py-3 flex flex-col md:flex-row justify-between items-center">
-          <div className="flex items-center mb-3 md:mb-0">
-            <Trees className="h-7 w-7 mr-2 animate-leaf-sway" />
-            <div>
-              <h1 className="text-xl md:text-2xl font-bold font-heading">TreeCity Explorer</h1>
-              <p className="text-xs md:text-sm text-forest-light">Explore Urban Forests Across India</p>
-            </div>
-          </div>
-          
-          <div className="flex items-center gap-2">
-            <Button variant="outline" className="bg-white/10 border-white/20 hover:bg-white/20" size="sm" asChild>
-              <Link to="/">Back to Home</Link>
-            </Button>
-          </div>
-        </div>
-      </header>
+      <Navigation />
       
       <main className="container mx-auto px-4 py-8 md:py-12">
         <div className="max-w-6xl mx-auto">
@@ -161,7 +146,7 @@ const Widgets = () => {
             <div>
               <h1 className="text-3xl font-bold text-gray-800 mb-2">Widgets Gallery</h1>
               <p className="text-gray-600">
-                Embed TreeCity Explorer widgets on your website for free
+                Embed MyTreeMaps widgets on your website for free
               </p>
             </div>
             
@@ -179,7 +164,7 @@ const Widgets = () => {
               <div>
                 <h3 className="text-amber-800 font-medium">Free for Non-Commercial Use</h3>
                 <p className="text-amber-700 text-sm mt-1">
-                  All TreeCity Explorer widgets are free to embed on your website for non-commercial purposes. 
+                  All MyTreeMaps widgets are free to embed on your website for non-commercial purposes. 
                   For commercial use or customized widgets, please contact us at{" "}
                   <a href="mailto:mohit@liveupx.com" className="underline hover:text-amber-900">mohit@liveupx.com</a>
                 </p>
@@ -209,7 +194,7 @@ const Widgets = () => {
                   <span>Copy Code</span>
                 </Button>
                 <Button variant="outline" asChild>
-                  <a href={`https://mytreemap.pages.dev/embed?city=${selectedCity}&type=treeCount&theme=${widgetTheme}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                  <a href={`https://mytreemap.netlify.app/embed?city=${selectedCity}&type=treeCount&theme=${widgetTheme}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                     <ExternalLink className="h-4 w-4" />
                     <span>Preview</span>
                   </a>
@@ -238,7 +223,7 @@ const Widgets = () => {
                   <span>Copy Code</span>
                 </Button>
                 <Button variant="outline" asChild>
-                  <a href={`https://mytreemap.pages.dev/embed?city=${selectedCity}&type=aqi&theme=${widgetTheme}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                  <a href={`https://mytreemap.netlify.app/embed?city=${selectedCity}&type=aqi&theme=${widgetTheme}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                     <ExternalLink className="h-4 w-4" />
                     <span>Preview</span>
                   </a>
@@ -267,7 +252,7 @@ const Widgets = () => {
                   <span>Copy Code</span>
                 </Button>
                 <Button variant="outline" asChild>
-                  <a href={`https://mytreemap.pages.dev/embed?city=${selectedCity}&type=stats&theme=${widgetTheme}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                  <a href={`https://mytreemap.netlify.app/embed?city=${selectedCity}&type=stats&theme=${widgetTheme}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                     <ExternalLink className="h-4 w-4" />
                     <span>Preview</span>
                   </a>
@@ -329,16 +314,16 @@ const Widgets = () => {
                 <div>
                   <h3 className="text-lg font-medium mb-3">Implementation Guide</h3>
                   <p className="text-sm text-gray-600 mb-4">
-                    To embed a TreeCity Explorer widget on your website, copy the iframe code below and paste it into your HTML:
+                    To embed a MyTreeMaps widget on your website, copy the iframe code below and paste it into your HTML:
                   </p>
                   
                   <div className="bg-gray-900 text-gray-100 p-4 rounded-md font-mono text-sm overflow-x-auto">
                     <pre>{`<iframe 
-  src="https://mytreemap.pages.dev/embed?city=${selectedCity}&type=treeCount&theme=${widgetTheme}" 
+  src="https://mytreemap.netlify.app/embed?city=${selectedCity}&type=treeCount&theme=${widgetTheme}" 
   width="300" 
   height="200" 
   frameborder="0"
-  title="TreeCity Explorer - ${selectedCity} tree count widget"
+  title="MyTreeMaps - ${selectedCity} tree count widget"
 ></iframe>`}</pre>
                   </div>
                   
@@ -383,21 +368,7 @@ const Widgets = () => {
         </div>
       </main>
       
-      <footer className="bg-gray-900 text-white py-8 mt-12">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-xs md:text-sm text-gray-400">
-              © 2024 TreeCity Explorer by Mohit Chaprana, Founder of Liveupx.com. All rights reserved.
-            </p>
-            <div className="mt-3 md:mt-0">
-              <a href="https://liveupx.com" target="_blank" rel="noopener noreferrer" className="text-forest-light hover:text-white transition-colors inline-flex items-center text-sm">
-                <span>Visit Liveupx.com</span>
-                <ExternalLink className="h-3 w-3 md:h-4 md:w-4 ml-1" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

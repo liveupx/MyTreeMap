@@ -32,7 +32,7 @@ const EmbedWidget = () => {
       >
         <div className="flex items-center justify-between">
           <div className={`text-sm font-medium ${params.theme === "light" ? "text-gray-500" : "text-gray-300"}`}>
-            {params.title || "TreeCity Explorer"}
+            {params.title || "MyTreeMaps Explorer"}
           </div>
           <Trees size={18} className="text-forest" />
         </div>
@@ -40,7 +40,7 @@ const EmbedWidget = () => {
           2,376,492
         </div>
         <div className={`text-xs ${params.theme === "light" ? "text-gray-500" : "text-gray-400"}`}>
-          {params.description || `Total trees in ${params.city}`}
+            {params.description || `Total trees in ${params.city}`}
         </div>
         <div className="mt-3 flex items-center text-xs">
           <div className={`px-2 py-1 rounded-full bg-forest/10 text-forest mr-2`}>
