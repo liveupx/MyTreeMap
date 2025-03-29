@@ -1,3 +1,5 @@
+<p align="center"><img src="public/repo.svg" alt="MyTreeMap Demo"></p>
+
 ![MyTreeMap Demo](public/test.gif)
 
 # 🌳 MyTreeMap
