@@ -1,3 +1,4 @@
+
 # 🌳 MyTreeMap
 
 ![MyTreeMap Logo](https://images.unsplash.com/photo-1500673922987-e212871fec22?w=600&h=400&fit=crop&crop=entropy&auto=format)
@@ -6,15 +7,44 @@
 
 MyTreeMap is an open-source platform that maps, monitors, and celebrates India's urban forests. The project aims to create awareness about the importance of trees in our cities and provide valuable data for urban forest management and conservation efforts.
 
-**Live Demo:** [https://mytreemap.netlify.app](https://mytreemap.netlify.app)
-
 <div align="center">
 
 [![GitHub stars](https://img.shields.io/github/stars/liveupx/MyTreeMap?style=social)](https://github.com/liveupx/MyTreeMap)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/12345678-1234-1234-1234-123456789abc/deploy-status)](https://app.netlify.com/sites/mytreemap/deploys)
-
+[![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://preview--treecity-explorer.lovable.app/)
 </div>
+
+## 🏆 Hackathon Submission - Website Track
+
+### Project Purpose
+MyTreeMap serves as an educational and environmental platform focused on raising awareness about urban forests in India. It visualizes tree data, provides environmental impact insights, and encourages community engagement with urban forestry initiatives.
+
+### Target Audience
+- **Environmental Activists**: Individuals working on urban forest conservation
+- **Urban Planners & Municipal Bodies**: Officials making decisions about urban green spaces
+- **Educational Institutions**: Schools and universities teaching about environmental science
+- **General Public**: Citizens interested in their city's green infrastructure
+
+### Key Interactive Elements
+- **Interactive Map**: Explore urban tree coverage across major Indian cities
+- **City Statistics Dashboard**: Data visualization of environmental impact metrics
+- **AI Tree Identifier**: Claude-powered tool for identifying tree species from photos
+- **Audio Guides**: ElevenLabs-powered narrations about urban forests in each city
+- **Community Contributions**: Supabase-powered platform for sharing tree planting stories
+- **Embeddable Widgets**: Tools for sharing tree data on external websites
+
+### Desired Visitor Actions
+- Explore tree distribution and environmental impact data for their city
+- Identify trees using the AI-powered tree identification tool
+- Share their tree planting and conservation stories
+- Embed interactive widgets on their own websites
+- Learn about urban forestry research and government initiatives
+
+### Technology Integrations
+- **Claude AI (Anthropic)**: Powers the tree species identification feature
+- **Supabase**: Manages user contributions and community engagement data
+- **ElevenLabs**: Provides text-to-speech narration for city tree tours
+- **Sentry**: Monitors application performance and tracks errors
 
 ## 📸 Screenshots
 
@@ -65,6 +95,9 @@ MyTreeMap is an open-source platform that maps, monitors, and celebrates India's
 - 🗺️ **Interactive Tree Map**: Explore tree locations across major Indian cities
 - 📈 **City Statistics**: View detailed tree statistics for each city
 - 🌤️ **Air Quality Data**: Real-time AQI data and its correlation with tree cover
+- 🤖 **AI Tree Identification**: Identify tree species from photos using Claude AI
+- 🔊 **Audio Tours**: Listen to narrated guides about each city's urban forest
+- 👥 **Community Stories**: Share and view tree planting initiatives from citizens
 - 📱 **Embeddable Widgets**: Free widgets to share tree data on your website
 - 🌿 **Environmental Impact**: Visualize the benefits of urban trees on air quality and climate
 - 📚 **Research Integration**: Access to research papers and methodologies
@@ -96,6 +129,8 @@ The platform currently includes data for the following cities:
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![MapBox](https://img.shields.io/badge/Mapbox-000000?style=for-the-badge&logo=mapbox&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+![Sentry](https://img.shields.io/badge/Sentry-362D59?style=for-the-badge&logo=sentry&logoColor=white)
 
 </div>
 
@@ -103,6 +138,9 @@ The platform currently includes data for the following cities:
 - 📊 Recharts for data visualization
 - 🔍 Lucide Icons for beautiful iconography
 - 🔄 TanStack Query for efficient data fetching
+- 🤖 Claude AI for tree species identification
+- 🔊 ElevenLabs for audio tour narration
+- 🚨 Sentry for error tracking and monitoring
 
 ## 🚀 Running Locally
 
@@ -140,6 +178,8 @@ src/
 ├── components/           # UI components
 │   ├── ui/               # shadcn/ui components
 │   ├── MapBox.tsx        # Map rendering component
+│   ├── TreeIdentifier.tsx # Claude AI tree identification
+│   ├── AudioGuide.tsx    # ElevenLabs audio narration
 │   ├── StatsPanel.tsx    # City statistics visualizations
 │   └── ...               # Other components
 ├── pages/                # Application pages
@@ -149,14 +189,14 @@ src/
 ├── hooks/                # Custom React hooks
 ├── lib/                  # Utilities and helper functions
 ├── App.tsx               # Main application component
-└── main.tsx              # Application entry point
+└── main.tsx              # Application entry point with Sentry
 ```
 
 ## 🔌 Embedding Widgets
 
 MyTreeMap provides free embeddable widgets that can be added to any website:
 
-1. Visit [https://mytreemap.netlify.app/widgets](https://mytreemap.netlify.app/widgets)
+1. Visit [https://preview--treecity-explorer.lovable.app/widgets](https://preview--treecity-explorer.lovable.app/widgets)
 2. Choose a widget type (Tree Count, AQI, or Statistics)
 3. Customize the widget
 4. Copy the embed code and paste it into your website
@@ -165,7 +205,7 @@ Example embed code:
 
 ```html
 <iframe 
-  src="https://mytreemap.netlify.app/embed?city=Delhi&type=treeCount&theme=light" 
+  src="https://preview--treecity-explorer.lovable.app/embed?city=Delhi&type=treeCount&theme=light" 
   width="300" 
   height="200" 
   frameborder="0"
@@ -196,7 +236,7 @@ MyTreeMap uses data from various sources, including:
 - 👥 Community reporting
 - 🔬 Scientific research studies
 
-For more information about our data methodology, visit [https://mytreemap.netlify.app/methodology](https://mytreemap.netlify.app/methodology)
+For more information about our data methodology, visit [https://preview--treecity-explorer.lovable.app/methodology](https://preview--treecity-explorer.lovable.app/methodology)
 
 ## 📞 Contact & Support
 
@@ -227,5 +267,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - 👨‍💻 Developed by Mohit Chaprana, Founder of [Liveupx.com](https://liveupx.com)
 - 🌆 Inspired by NYC's Tree Map project
-- 🤝 Thanks to all our [partner organizations](https://mytreemap.netlify.app/partners)
+- 🤝 Thanks to all our [partner organizations](https://lovable.dev/)
 - ✨ Special thanks to all contributors and tree enthusiasts
+
