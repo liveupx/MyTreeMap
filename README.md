@@ -1,7 +1,7 @@
 
 # 🌳 MyTreeMap
 
-![MyTreeMap Demo](./public/test.gif)
+![MyTreeMap Demo](public/test.gif)
 
 ## An interactive urban forestry platform for Indian cities
 
