@@ -10,19 +10,27 @@ MyTreeMap Explorer is an open-source platform that maps, monitors, and celebrate
 **Live Demo:** [https://mytreemap.netlify.app](https//mytreemap.netlify.app)
 
 ## Screenshots
-Here are some screenshots of the application:
+
+<div align="center" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 30px 0;">
 
 ![Screenshot 1](./public/ss1.png)
-*Screenshot 1: Homepage with city view*
-
 ![Screenshot 2](./public/ss2.png)
-*Screenshot 2: Detailed city analytics*
-
 ![Screenshot 3](./public/ss3.png)
-*Screenshot 3: User interaction with map overlays*
-
 ![Screenshot 4](./public/ss4.png)
-*Screenshot 4: Mobile responsive design*
+![Screenshot 5](./public/ss5.png)
+![Screenshot 6](./public/ss6.png)
+![Screenshot 7](./public/ss7.png)
+![Screenshot 8](./public/ss8.png)
+![Screenshot 9](./public/ss9.png)
+![Screenshot 10](./public/ss10.png)
+![Screenshot 11](./public/ss11.png)
+![Screenshot 12](./public/ss12.png)
+![Screenshot 13](./public/ss13.png)
+![Screenshot 14](./public/ss14.png)
+![Screenshot 15](./public/ss15.png)
+![Screenshot 16](./public/ss16.png)
+
+</div>
 
 
 ## Features
