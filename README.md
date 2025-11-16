@@ -386,4 +386,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - 🌆 Inspired by NYC's Tree Map project
 - 🤝 Thanks to all our [partner organizations](https://lovable.dev/)
 - ✨ Special thanks to all contributors and tree enthusiasts
-
