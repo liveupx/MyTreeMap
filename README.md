@@ -2,7 +2,7 @@
 
 ![MyTreeMap Demo](public/test.gif)
 
-# 🌳 MyTreeMap
+# 🌳 MyTreeMap by Liveupx.com
 
 ## An interactive urban forestry platform for Indian cities
 
